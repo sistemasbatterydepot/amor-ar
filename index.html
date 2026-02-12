@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/ar.js@3.4.2/aframe/build/aframe-ar.js"></script>
+</head>
+
+<body style="margin: 0; overflow: hidden;">
+<a-scene embedded arjs>
+
+<a-marker preset="hiro">
+
+<a-sphere 
+  radius="0.8"
+  color="#ff00cc"
+  position="0 1 0"
+  animation="property: scale; dir: alternate; dur: 1000; loop: true; to: 1.2 1.2 1.2">
+</a-sphere>
+
+<a-text 
+  value="Feliz Dia del Amor y la Amistad\nEres la razon de mi sonrisa 💖"
+  align="center"
+  color="#ff66ff"
+  position="0 2 0"
+  width="4">
+</a-text>
+
+</a-marker>
+
+<a-entity camera></a-entity>
+</a-scene>
+</body>
+</html>
