@@ -10,22 +10,26 @@
 
 <a-scene embedded>
 
-<a-entity camera look-controls></a-entity>
+<a-camera position="0 1.6 0">
+  <a-entity 
+    position="0 0 -2">
 
-<a-sphere 
-  position="0 1.6 -3"
-  radius="0.8"
-  color="#ff00cc"
-  animation="property: scale; dir: alternate; dur: 1000; loop: true; to: 1.3 1.3 1.3">
-</a-sphere>
+    <a-sphere 
+      radius="0.6"
+      color="#ff00cc"
+      animation="property: scale; dir: alternate; dur: 1000; loop: true; to: 1.3 1.3 1.3">
+    </a-sphere>
 
-<a-text 
-  value="Feliz Dia del Amor y la Amistad\nEres la razon de mi sonrisa 💖"
-  align="center"
-  color="#ff66ff"
-  position="0 3 -3"
-  width="4">
-</a-text>
+    <a-text 
+      value="Feliz Dia del Amor y la Amistad\nEres la razon de mi sonrisa 💖"
+      align="center"
+      color="#ff66ff"
+      position="0 1 0"
+      width="3">
+    </a-text>
+
+  </a-entity>
+</a-camera>
 
 </a-scene>
 
